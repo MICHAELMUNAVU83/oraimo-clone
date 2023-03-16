@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./splide-green.min.css";
-import audio from "./images/audio.jpeg";
-import powerbank from "./images/powerbank.jpg";
-import watch from "./images/watch.jpeg";
-import shaver from "./images/shaver.jpg";
+import { GrStar } from "react-icons/gr";
+
 const HomeProductSlider = () => {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3000/products")
+      .then((res) => res.json())
+      .then((data) => {
+        setProducts(data);
+      });
+  }, []);
+
   return (
-    <div className="m-12">
+    <div className="m-12 py-8">
       <Splide
         className="w-full h-[300px] "
         options={{
@@ -37,54 +44,38 @@ const HomeProductSlider = () => {
           },
         }}
       >
-        <SplideSlide>
-          <div className="relative">
-            <img src={audio} alt="slide" className="h-[300px] w-[300px] mx-2" />
-            <p className="absolute top-5 left-10  text-white text-5xl font-bold">
-              Audio
-            </p>
-          </div>
-        </SplideSlide>
-        <SplideSlide>
-          <div className="relative">
-            <img
-              src={powerbank}
-              alt="slide"
-              className="h-[300px] w-[300px] mx-2"
-            />
-            <p className="absolute top-5 left-10  text-white text-5xl font-bold">
-              Audio
-            </p>
-          </div>
-        </SplideSlide>
-        <SplideSlide>
-          <div className="relative">
-            <img src={watch} alt="slide" className="h-[300px] w-[300px] mx-2" />
-            <p className="absolute top-5 left-10  text-white text-5xl font-bold">
-              Audio
-            </p>
-          </div>
-        </SplideSlide>
-        <SplideSlide>
-          <div className="relative">
-            <img
-              src={shaver}
-              alt="slide"
-              className="h-[300px] w-[300px] mx-2"
-            />
-            <p className="absolute top-5 left-10  text-white text-5xl font-bold">
-              Audio
-            </p>
-          </div>
-        </SplideSlide>
-        <SplideSlide>
-          <div className="relative">
-            <img src={audio} alt="slide" className="h-[300px] w-[300px] mx-2" />
-            <p className="absolute top-5 left-10  text-white text-5xl font-bold">
-              Audio
-            </p>
-          </div>
-        </SplideSlide>
+        {products.map((product) => (
+          <SplideSlide>
+            <div className="flex flex-col items-center ">
+              <img
+                src={product.image}
+                alt="slide"
+                className="h-[300px] w-[300px] mx-2"
+              />
+              <p className=" text-center font-semibold text-sm">
+                {product.name}
+              </p>
+              <div className="flex">
+                <div className="flex items-center">
+                  {[...Array(product.star_rating)].map((star) => {
+                    return <GrStar className="text-yellow-400" />;
+                  })}
+                </div>
+                <p className="text-sm text-blue-500 ml-2">
+                  {product.reviews} Reviews
+                </p>
+              </div>
+              <div className="flex gap-4">
+                <p className="text-lg font-semibold line-through">
+                  KES {product.initial_price}
+                </p>
+                <p className="text-lg font-bold text-[#82E602]">
+                  KES {product.actual_price}
+                </p>
+              </div>
+            </div>
+          </SplideSlide>
+        ))}
       </Splide>
     </div>
   );
