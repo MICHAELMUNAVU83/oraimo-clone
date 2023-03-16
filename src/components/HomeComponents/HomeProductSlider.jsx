@@ -16,7 +16,7 @@ const HomeProductSlider = () => {
   return (
     <div className="m-12 py-8">
       <Splide
-        className="w-full h-[300px] "
+        className="w-full h-[300px] md:h-[300px] "
         options={{
   
           perPage: 4,
@@ -30,8 +30,10 @@ const HomeProductSlider = () => {
           drag: true,
           breakpoints: {
             640: {
-              perPage: 1,
+              perPage: 2,
               perMove: 1,
+              arrows: false,
+              pagination: true,
             },
             768: {
               perPage: 2,
@@ -50,26 +52,26 @@ const HomeProductSlider = () => {
               <img
                 src={product.image}
                 alt="slide"
-                className="h-[300px] w-[300px] mx-2"
+                className="md:h-[300px] h-[100px] md:w-[300px] w-[100px] mx-2"
               />
-              <p className=" text-center font-semibold text-sm">
+              <p className=" text-center font-semibold text-xs md:text-sm">
                 {product.name}
               </p>
-              <div className="flex">
+              <div className="flex my-4 md:my-0">
                 <div className="flex items-center">
                   {[...Array(product.star_rating)].map((star) => {
-                    return <GrStar className="text-yellow-400" />;
+                    return <GrStar className="text-yellow-400 text-sm md:text-md" />;
                   })}
                 </div>
-                <p className="text-sm text-blue-500 ml-2">
+                <p className="md:text-sm text-blue-500 text-xs md:ml-2">
                   {product.reviews} Reviews
                 </p>
               </div>
-              <div className="flex gap-4">
-                <p className="text-lg font-semibold line-through">
+              <div className="flex gap-2 md:gap-4">
+                <p className="md:text-lg text-xs font-semibold line-through">
                   KES {product.initial_price}
                 </p>
-                <p className="text-lg font-bold text-[#82E602]">
+                <p className="md:text-lg text-xs font-bold text-[#82E602]">
                   KES {product.actual_price}
                 </p>
               </div>

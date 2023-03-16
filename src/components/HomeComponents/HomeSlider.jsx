@@ -33,7 +33,7 @@ const HomeSlider = () => {
   ];
   return (
     <Splide
-      className="w-full h-[500px]"
+      className="w-full md:h-[500px] h-[250px]"
       options={{
         type: "loop",
         perPage: 1,
@@ -50,7 +50,7 @@ const HomeSlider = () => {
     >
       {slides.map((slide, index) => (
         <SplideSlide key={index}>
-          <img src={slide.image} alt="slide" className="h-[500px] w-full" />
+          <img src={slide.image} alt="slide" className="md:h-[500px] h-[250px] w-full" />
         </SplideSlide>
       ))}
     </Splide>

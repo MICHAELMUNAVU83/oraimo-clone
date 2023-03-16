@@ -6,29 +6,29 @@ import shaver from "../images/shaver.jpg";
 
 const HomeImages = () => {
   return (
-    <div className="m-12">
+    <div className="md:m-12 m-4">
       <div className=" grid grid-cols-2 gap-4">
         <div className="relative">
-          <img src={audio} alt="audio" className="h-[400px] w-full" />
-          <p className="absolute top-5 left-10  text-white text-5xl font-bold">
+          <img src={audio} alt="audio" className="md:h-[400px] h-[200px] md:w-full  " />
+          <p className="absolute top-3 left-10  text-white md:text-5xl text-xl font-bold">
             Audio
           </p>
         </div>
         <div className="relative">
-          <img src={shaver} alt="shaver" className="h-[400px] w-full" />
-          <p className="absolute top-5 left-10  text-white text-5xl font-bold">
+          <img src={shaver} alt="shaver" className="md:h-[400px] h-[200px] md:w-full " />
+          <p className="absolute top-3 left-10  text-white md:text-5xl text-xl font-bold">
             Lifestyle
           </p>
         </div>
         <div className="relative">
-          <img src={powerbank} alt="powerbank" className="h-[400px] w-full" />
-          <p className="absolute top-5 left-10  text-white text-5xl font-bold">
+          <img src={powerbank} alt="powerbank" className="md:h-[400px] h-[200px] md:w-full " />
+          <p className="absolute top-3 left-10  text-white md:text-5xl text-xl font-bold">
             Power
           </p>
         </div>
         <div className="relative">
-          <img src={watch} alt="watch" className="h-[400px] w-full" />
-          <p className="absolute top-5 left-10  text-white text-5xl font-bold">
+          <img src={watch} alt="watch" className="md:h-[400px] h-[200px] md:w-full " />
+          <p className="absolute top-3 left-10  text-white md:text-5xl text-xl font-bold">
             Wearable
           </p>
         </div>
