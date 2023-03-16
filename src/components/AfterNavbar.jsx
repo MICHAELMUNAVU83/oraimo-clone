@@ -33,20 +33,26 @@ const AfterNavbar = () => {
             <p>Product </p>
             <IoIosArrowDown className="font-bold mt-1 " size={15} />
           </div>
-          <div className="hidden font-normal group-hover:flex flex-row justify-center gap-16 text-black w-[100%] mx-auto z-10  bg-white mt-2 py-2 absolute inset-x-0 top-32 h-[100vh] ">
+          <div className="hidden transition duration-500 ease-in font-normal group-hover:flex flex-row justify-center gap-16 text-black w-[100%] mx-auto z-10  bg-white mt-2 py-2 absolute inset-x-0 top-32 h-[100vh] ">
             <hr />
             <div className="flex text-gray-400 flex-col gap-2">
               <img src={product1} alt="product1" className="w-[250px]" />
               <p className="text-start text-gray-500 p-2 font-semibold text-2xl hover:bg-gray-200  rounded-lg">
                 Power
               </p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">Car Chargers</p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">Power Banks</p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+              <p className=" hover:bg-gray-200 p-1 text-sm   rounded-lg">
+                Car Chargers
+              </p>
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
+                Power Banks
+              </p>
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
                 Wall Chargers
               </p>
-              <p className=" hover:bg-gray-200 p-1 rounded-lg">Cable</p>
-              <p className=" hover:bg-gray-200 p-1 rounded-lg">Power Strips</p>
+              <p className=" hover:bg-gray-200 p-1 text-sm rounded-lg">Cable</p>
+              <p className=" hover:bg-gray-200 p-1 text-sm rounded-lg">
+                Power Strips
+              </p>
             </div>
 
             <div className="flex text-gray-400 flex-col gap-2">
@@ -54,19 +60,19 @@ const AfterNavbar = () => {
               <p className="text-start text-gray-500 p-2 font-semibold text-2xl hover:bg-gray-200  rounded-lg">
                 Audio
               </p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
                 Wireless Stereo Buds
               </p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
                 Wireless Speakers
               </p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
                 Sport Wireless Earphones
               </p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
                 Open ear Wireless Headphones
               </p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
                 Wired Earphones
               </p>
             </div>
@@ -76,28 +82,36 @@ const AfterNavbar = () => {
               <p className="text-start text-gray-500 p-2 font-semibold text-2xl hover:bg-gray-200  rounded-lg">
                 Lifestyle
               </p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
                 Shaving and hair removal
               </p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">Vaccuums</p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
+                Vaccuums
+              </p>
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
                 Electric Toothbrushes
               </p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
                 Smart Light Bulbs{" "}
               </p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
                 Mice and Keyboards
               </p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">Smart Scales</p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
+                Smart Scales
+              </p>
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
                 Camera accessories
               </p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">Backpacks</p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
+                Backpacks
+              </p>
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
                 Beauty tools and accessories
               </p>
-              <p className=" hover:bg-gray-200 p-1  rounded-lg">Mi-Fi</p>
+              <p className=" hover:bg-gray-200 p-1 text-sm  rounded-lg">
+                Mi-Fi
+              </p>
             </div>
 
             <div className="flex text-gray-400 flex-col gap-2">
@@ -116,7 +130,7 @@ const AfterNavbar = () => {
             <p>Support </p>
             <IoIosArrowDown className="font-bold mt-1 " size={15} />
           </div>
-          <div className="hidden font-normal group-hover:block text-black absolute bg-white mt-2 py-2 w-[350px] h-[240px] ">
+          <div className="hidden font-normal z-10 group-hover:block text-black absolute bg-white mt-2 py-2 w-[350px] h-[220px] ">
             <div className="px-4 my-2">
               Track Order
               <a
@@ -136,7 +150,7 @@ const AfterNavbar = () => {
             <hr className="mx-2" />
 
             <div className="px-4">
-              Visit CarlCare
+              Visit CarlCare 
               <a
                 className="block  p-2 rounded-lg text-gray-800 hover:bg-gray-200"
                 href="track-order.com"
