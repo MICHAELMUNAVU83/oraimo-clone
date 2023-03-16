@@ -3,7 +3,7 @@ import { GrStar } from "react-icons/gr";
 const HomePoductsDisplay = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/products_display")
+    fetch("https://oraimo-clone-backend.herokuapp.com/products_display")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
@@ -18,7 +18,10 @@ const HomePoductsDisplay = () => {
       </div>
       <div className="grid grid-cols-2  lg:grid-cols-4 gap-4">
         {products.map((product) => (
-          <div className="flex flex-col items-center md:h[800px] h-[350px] " key={product.id}>
+          <div
+            className="flex flex-col items-center md:h[800px] h-[350px] "
+            key={product.id}
+          >
             <img
               src={product.image}
               alt="slide"
@@ -28,7 +31,9 @@ const HomePoductsDisplay = () => {
             <div className="flex  my-4 md:my-0">
               <div className="flex items-center">
                 {[...Array(product.star_rating)].map((star) => {
-                  return <GrStar className="text-yellow-400 md:text-md text-xs" />;
+                  return (
+                    <GrStar className="text-yellow-400 md:text-md text-xs" />
+                  );
                 })}
               </div>
               <p className="md:text-sm text-sm text-blue-500 md:ml-2">

@@ -8,7 +8,7 @@ const Home = () => {
   const [sortby, setSortby] = useState("position");
   const [positioning, setPositioning] = useState("row");
   useEffect(() => {
-    fetch(`http://localhost:3000/sort_by_${sortby}`)
+    fetch(`https://oraimo-clone-backend.herokuapp.com/sort_by_${sortby}`)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

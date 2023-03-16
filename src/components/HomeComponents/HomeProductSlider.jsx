@@ -6,7 +6,7 @@ import { GrStar } from "react-icons/gr";
 const HomeProductSlider = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/products")
+    fetch("https://oraimo-clone-backend.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
@@ -18,7 +18,6 @@ const HomeProductSlider = () => {
       <Splide
         className="w-full h-[300px] md:h-[300px] "
         options={{
-  
           perPage: 4,
           perMove: 1,
           autoplay: true,
@@ -60,7 +59,9 @@ const HomeProductSlider = () => {
               <div className="flex my-4 md:my-0">
                 <div className="flex items-center">
                   {[...Array(product.star_rating)].map((star) => {
-                    return <GrStar className="text-yellow-400 text-sm md:text-md" />;
+                    return (
+                      <GrStar className="text-yellow-400 text-sm md:text-md" />
+                    );
                   })}
                 </div>
                 <p className="md:text-sm text-blue-500 text-xs md:ml-2">

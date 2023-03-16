@@ -16,7 +16,7 @@ import create9 from "../images/create9.jpeg";
 const Home = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/products")
+    fetch("https://oraimo-clone-backend.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
