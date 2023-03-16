@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "./splide-green.min.css";
+import "../splide-green.min.css";
 import { GrStar } from "react-icons/gr";
 
 const HomeProductSlider = () => {

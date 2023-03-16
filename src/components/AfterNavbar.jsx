@@ -5,27 +5,155 @@ import { HiOutlineUser } from "react-icons/hi";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { AiOutlineDollarCircle } from "react-icons/ai";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
+import { IoIosArrowDown } from "react-icons/io";
+import carlcare from "./images/carlcare.png";
+import deliverytohome from "./images/deliverytohome.png";
+import product1 from "./images/product1.jpeg";
+import product2 from "./images/product2.jpeg";
+import product3 from "./images/product3.jpeg";
+import product4 from "./images/product4.jpeg";
+import { Link } from "react-router-dom";
 
 const AfterNavbar = () => {
   return (
     <>
       <div className="flex justify-center gap-12 my-8">
         <img src={oraimo} alt="oraimo" className="h-[90px]" />
-        <p className="py-8 font-bold text-gray-600 hover:text-[#82E602] cursor-pointer ">
+        <Link
+          className="py-8 font-bold text-gray-600 hover:text-[#82E602] cursor-pointer "
+          to="/"
+        >
           Home
-        </p>
+        </Link>
         <p className="py-8 font-bold text-gray-600 hover:text-[#82E602] cursor-pointer ">
           Daily Deals
         </p>
-        <p className="py-8 font-bold text-gray-600 hover:text-[#82E602] cursor-pointer ">
-          Product{" "}
+        <p className="py-8 group font-bold text-gray-600 hover:text-[#82E602] cursor-pointer ">
+          <div className="flex gap-2 relative">
+            <p>Product </p>
+            <IoIosArrowDown className="font-bold mt-1 " size={15} />
+          </div>
+          <div className="hidden font-normal group-hover:flex flex-row justify-center gap-16 text-black w-[100%] mx-auto z-10  bg-white mt-2 py-2 absolute inset-x-0 top-32 h-[100vh] ">
+            <hr />
+            <div className="flex text-gray-400 flex-col gap-2">
+              <img src={product1} alt="product1" className="w-[250px]" />
+              <p className="text-start text-gray-500 p-2 font-semibold text-2xl hover:bg-gray-200  rounded-lg">
+                Power
+              </p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">Car Chargers</p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">Power Banks</p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+                Wall Chargers
+              </p>
+              <p className=" hover:bg-gray-200 p-1 rounded-lg">Cable</p>
+              <p className=" hover:bg-gray-200 p-1 rounded-lg">Power Strips</p>
+            </div>
+
+            <div className="flex text-gray-400 flex-col gap-2">
+              <img src={product2} alt="product2" className="w-[250px]" />
+              <p className="text-start text-gray-500 p-2 font-semibold text-2xl hover:bg-gray-200  rounded-lg">
+                Audio
+              </p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+                Wireless Stereo Buds
+              </p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+                Wireless Speakers
+              </p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+                Sport Wireless Earphones
+              </p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+                Open ear Wireless Headphones
+              </p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+                Wired Earphones
+              </p>
+            </div>
+
+            <div className="flex text-gray-400 flex-col gap-2">
+              <img src={product3} alt="product3" className="w-[250px]" />
+              <p className="text-start text-gray-500 p-2 font-semibold text-2xl hover:bg-gray-200  rounded-lg">
+                Lifestyle
+              </p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+                Shaving and hair removal
+              </p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">Vaccuums</p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+                Electric Toothbrushes
+              </p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+                Smart Light Bulbs{" "}
+              </p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+                Mice and Keyboards
+              </p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">Smart Scales</p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+                Camera accessories
+              </p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">Backpacks</p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+                Beauty tools and accessories
+              </p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">Mi-Fi</p>
+            </div>
+
+            <div className="flex text-gray-400 flex-col gap-2">
+              <img src={product4} alt="product4" className="w-[250px]" />
+              <p className="text-start text-gray-500 p-2 font-semibold text-2xl hover:bg-gray-200  rounded-lg">
+                Wearable
+              </p>
+              <p className=" hover:bg-gray-200 p-1  rounded-lg">
+                Smart Watches
+              </p>
+            </div>
+          </div>
         </p>
-        <p className="py-8 font-bold text-gray-600 hover:text-[#82E602] cursor-pointer ">
-          Support
+        <p className="py-8 group font-bold text-gray-600 hover:text-[#82E602] cursor-pointer ">
+          <div className="flex gap-2">
+            <p>Support </p>
+            <IoIosArrowDown className="font-bold mt-1 " size={15} />
+          </div>
+          <div className="hidden font-normal group-hover:block text-black absolute bg-white mt-2 py-2 w-[350px] h-[240px] ">
+            <div className="px-4 my-2">
+              Track Order
+              <a
+                className="block  p-2 rounded-lg text-gray-800 hover:bg-gray-200"
+                href="track-order.com"
+              >
+                <div>
+                  <img
+                    src={deliverytohome}
+                    alt="deliverytohome"
+                    className="h-[50px]"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <hr className="mx-2" />
+
+            <div className="px-4">
+              Visit CarlCare
+              <a
+                className="block  p-2 rounded-lg text-gray-800 hover:bg-gray-200"
+                href="track-order.com"
+              >
+                <div>
+                  <img src={carlcare} alt="carlcare" className="h-[50px]" />
+                </div>
+              </a>
+            </div>
+          </div>
         </p>
-        <p className="py-8 font-bold text-gray-600 hover:text-[#82E602] cursor-pointer ">
+        <Link
+          className="py-8 font-bold text-gray-600 hover:text-[#82E602] cursor-pointer "
+          to="/create-your-way"
+        >
           #Create Your Way
-        </p>
+        </Link>
         <form className="py-5">
           <label
             for="default-search"
