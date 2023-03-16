@@ -1,9 +1,9 @@
 import React from "react";
-import HomeSlider from "../components/HomeSlider";
-import HomeImages from "../components/HomeImages";
-import HomeProductSlider from "../components/HomeProductSlider";
-import HomePoductsDisplay from "../components/HomePoductsDisplay";
-
+import HomeSlider from "../components/HomeComponents/HomeSlider";
+import HomeImages from "../components/HomeComponents/HomeImages";
+import HomeProductSlider from "../components/HomeComponents/HomeProductSlider";
+import HomePoductsDisplay from "../components/HomeComponents/HomePoductsDisplay";
+import Footer from "../components/Footer";
 const Home = () => {
   return (
     <div>
@@ -11,6 +11,7 @@ const Home = () => {
       <HomeImages />
       <HomeProductSlider />
       <HomePoductsDisplay />
+      <Footer />
     </div>
   );
 };

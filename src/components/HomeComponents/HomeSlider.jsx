@@ -1,11 +1,11 @@
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./splide-green.min.css";
-import slider1 from "./images/slider1.jpeg";
-import slider2 from "./images/slider2.jpeg";
-import slider3 from "./images/slider3.jpeg";
-import slider4 from "./images/slider4.jpeg";
-import slider5 from "./images/slider5.jpeg";
+import slider1 from "../images/slider1.jpeg";
+import slider2 from "../images/slider2.jpeg";
+import slider3 from "../images/slider3.jpeg";
+import slider4 from "../images/slider4.jpeg";
+import slider5 from "../images/slider5.jpeg";
 
 const HomeSlider = () => {
   const slides = [

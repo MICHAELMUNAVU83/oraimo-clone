@@ -53,7 +53,7 @@ const AfterNavbar = () => {
             </div>
             <input
               type="text"
-              class="block w-full p-4 pl-10 text-sm border border-gray-400  rounded-3xl text-black  w-[180px] h-[30px]  "
+              class="block w-full p-4 pl-10 text-sm border border-gray-400  rounded-3xl text-black  w-[180px] h-[40px]  "
               placeholder="search oraimo products"
             />
           </div>

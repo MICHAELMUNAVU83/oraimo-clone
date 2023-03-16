@@ -1,8 +1,8 @@
 import React from "react";
-import audio from "./images/audio.jpeg";
-import powerbank from "./images/powerbank.jpg";
-import watch from "./images/watch.jpeg";
-import shaver from "./images/shaver.jpg";
+import audio from "../images/audio.jpeg";
+import powerbank from "../images/powerbank.jpg";
+import watch from "../images/watch.jpeg";
+import shaver from "../images/shaver.jpg";
 
 const HomeImages = () => {
   return (

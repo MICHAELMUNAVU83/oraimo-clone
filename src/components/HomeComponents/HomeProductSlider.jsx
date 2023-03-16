@@ -18,7 +18,7 @@ const HomeProductSlider = () => {
       <Splide
         className="w-full h-[300px] "
         options={{
-          type: "loop",
+  
           perPage: 4,
           perMove: 1,
           autoplay: true,
