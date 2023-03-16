@@ -27,20 +27,20 @@
   z-index: 1;
 }
 .splide__arrow svg {
-  fill: #82e602;
-  height: 2.5em;
+  fill: #838383;
+  height: 2em;
 
   transition: fill 0.2s linear;
-  width: 2.5em;
+  width: 2em;
 }
 .splide__arrow:hover:not(:disabled) svg {
-  fill: #82e602;
+  fill: #838383;
 }
 .splide__arrow:disabled {
   opacity: 0.3;
 }
 .splide__arrow:focus-visible {
-  outline: 3px solid #82e602;
+  outline: 3px solid #838383;
   outline-offset: 3px;
 }
 .splide__arrow--prev {
@@ -53,7 +53,7 @@
   right: 1em;
 }
 .splide.is-focus-in .splide__arrow:focus {
-  outline: 3px solid #82e602;
+  outline: 3px solid #838383;
   outline-offset: 3px;
 }
 .splide__pagination {
