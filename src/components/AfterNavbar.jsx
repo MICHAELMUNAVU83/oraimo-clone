@@ -144,7 +144,7 @@ const AfterNavbar = () => {
                   <img
                     src={deliverytohome}
                     alt="deliverytohome"
-                    className="h-[50px]"
+                    className="h-[30px]"
                   />
                 </div>
               </a>
@@ -159,7 +159,7 @@ const AfterNavbar = () => {
                 href="track-order.com"
               >
                 <div>
-                  <img src={carlcare} alt="carlcare" className="h-[50px]" />
+                  <img src={carlcare} alt="carlcare" className="h-[35px]" />
                 </div>
               </a>
             </div>

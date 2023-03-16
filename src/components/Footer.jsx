@@ -25,7 +25,7 @@ const Footer = () => {
               </div>
               <input
                 type="text"
-                class="block w-full p-4 pl-10 text-sm bg-[#323232] border border-gray-400  rounded-3xl text-black  w-[300px] h-[45px]  "
+                class="block w-full p-4 pl-10 text-sm bg-[#323232] border border-gray-400  rounded-3xl text-white  w-[300px] h-[45px]  "
                 placeholder="Enter your email address"
               />
               <div class="absolute inset-y-0 right-0 flex items-center pr-1 pointer-events-none">
@@ -35,12 +35,12 @@ const Footer = () => {
               </div>
             </div>
           </form>
-          <p className="my-2">SERVICE HOURS: Monday-Friday 9AM to 6PM</p>
-          <p className="my-2">
+          <p className="my-2 text-sm">SERVICE HOURS: Monday-Friday 9AM to 6PM</p>
+          <p className="my-2 text-sm">
             CUSTOMER SERVICE: +0721 899 999 / +0724 393 939
           </p>
-          <p className="ml-40">+0724 757 717 / +0727 535 595</p>
-          <p className="my-2">Whatsapp us on 0728 810 810 / 0797 288 388</p>
+          <p className="ml-40 text-sm">+0724 757 717 / +0727 535 595</p>
+          <p className="my-2 text-sm">Whatsapp us on 0728 810 810 / 0797 288 388</p>
           <div className="flex gap-2 mt-4">
             <ImInstagram className="bg-gray-200 rounded-full text-black h-8 w-8  p-2 text-2xl" />
             <RiFacebookFill className="bg-gray-200 rounded-full text-black h-8 w-8  p-2 text-2xl" />
@@ -50,22 +50,22 @@ const Footer = () => {
         </div>
         <div className="text-white">
           <h1 className="font-bold text-2xl text-[#82E602] my-2">About Oraimo:::</h1>
-          <p className="my-2">About us</p>
-          <p className="my-2">Where to buy</p>
-          <p className="my-2">Contact us</p>
+          <p className="my-2 text-sm">About us</p>
+          <p className="my-2 text-sm">Where to buy</p>
+          <p className="my-2 text-sm">Contact us</p>
         </div>
         <div className="text-white">
           <h1 className="font-bold text-2xl text-[#82E602] my-2">Terms:::</h1>
-          <p className="my-2">Warranty</p>
-          <p className="my-2">Order & Shipping</p>
-          <p className="my-2">Replacement & Refund</p>
-          <p className="my-2">Terms & Condition</p>
-          <p className="my-2">Privacy Policy</p>
+          <p className="my-2 text-sm">Warranty</p>
+          <p className="my-2 text-sm">Order & Shipping</p>
+          <p className="my-2 text-sm">Replacement & Refund</p>
+          <p className="my-2 text-sm">Terms & Condition</p>
+          <p className="my-2 text-sm">Privacy Policy</p>
         </div>
         <div className="text-white">
           <h1 className="font-bold text-2xl text-[#82E602] my-2">Get Help:::</h1>
-          <p className="my-2">Track your order</p>
-          <p className="my-2">Visit Carlcare </p>
+          <p className="my-2 text-sm">Track your order</p>
+          <p className="my-2 text-sm">Visit Carlcare </p>
         </div>
       </div>
       <div className="bg-black flex py-4 flex-col items-center justify-center text-white">

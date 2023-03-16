@@ -6,7 +6,7 @@ const NavBar = () => {
       <div id="scroll-text" className="flex font-bold gap-2">
         Free shipping for orders over KES1500. Any other questions? Contact us
         at
-        <a href="oraimo.co" className="text-blue-600 ">Care.ke@oraimo.com</a>
+        <a href="oraimo.co" className="text-blue-600  hover:underline">Care.ke@oraimo.com</a>
       </div>
     </div>
   );

@@ -10,20 +10,26 @@ import slider5 from "../images/slider5.jpeg";
 const HomeSlider = () => {
   const slides = [
     {
-      image: slider1,
-    },
-    {
-      image: slider2,
+      image: slider5,
     },
     {
       image: slider3,
     },
     {
-      image: slider4,
-    },
-    {
       image: slider5,
     },
+    {
+      image: slider1,
+    },
+    
+    {
+      image: slider2,
+    },
+    
+    {
+      image: slider4,
+    }
+    
   ];
   return (
     <Splide
