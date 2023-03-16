@@ -25,9 +25,12 @@ const AfterNavbar = () => {
         >
           Home
         </Link>
-        <p className="py-8 font-bold text-gray-600 hover:text-[#82E602] cursor-pointer ">
+        <Link
+          className="py-8 font-bold text-gray-600 hover:text-[#82E602] cursor-pointer "
+          to="/daily-deals"
+        >
           Daily Deals
-        </p>
+        </Link>
         <p className="py-8 group font-bold text-gray-600 hover:text-[#82E602] cursor-pointer ">
           <div className="flex gap-2 relative">
             <p>Product </p>
@@ -150,7 +153,7 @@ const AfterNavbar = () => {
             <hr className="mx-2" />
 
             <div className="px-4">
-              Visit CarlCare 
+              Visit CarlCare
               <a
                 className="block  p-2 rounded-lg text-gray-800 hover:bg-gray-200"
                 href="track-order.com"
